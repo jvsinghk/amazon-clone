@@ -40,11 +40,11 @@
   justify-content: space-evenly;
 }
 
-.header__searchoptionLineOne {
+.header__optionLineOne {
   font-size: 10px;
 }
 
-.header__searchoptionLineTwo {
+.header__optionLineTwo {
   font-size: 13px;
   font-weight: 800;
 }
