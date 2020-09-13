@@ -4,14 +4,22 @@ import Header from "./Header";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
+import { useStateValue } from "./StateProvider";
+import Login from "./Login";
 
 function App() {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     //BEM Convention
     <Router>
       <div className="app">
         <Header />
         <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Checkout />
           <Route path="/checkout">
             <Checkout />
           </Route>
