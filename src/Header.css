@@ -67,3 +67,7 @@
   margin-right: 10px;
   color: white;
 }
+
+.header__link {
+  text-decoration: none;
+}
