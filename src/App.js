@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./layout/Header/Header";
+import Footer from "./layout/Footer/Footer";
 import Home from "./components/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./components/Checkout/Checkout";
@@ -61,6 +62,7 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </div>
