@@ -1,68 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Amazon Clone
 
-## Available Scripts
+An E-Commerce application used to order items of diffrent categories like electronics, pantry, etc. Built with React, JavaScript, Context-Api, Router, CSS, Firebase and Stripe
 
-In the project directory, you can run:
+## Project Status
 
-### `yarn start`
+Complete the Frontend with React and Backend with Firebase Cloud Functions of the following components:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Home - Contains the list of products with basic layout of Header and Footer.
+- Login - Contains the Login page whre you can add valid email password to Create your new amazon clone account and Sign In.
+- Checkout - All the products added to the basket will show here and can be removed using Remove to Basket button. After clicking Proceed to checkout you will be redirected to Payment Page.
+- Payment - This page has a static Delivery address for now. You can Review your delivery items and Stripe-Api is used for the payment method it accepst Visa Card. You can add
+  42424242...until it ends for the testing. It's a default Visa card for Stripe.
+- Orders - After the successful payment the on clicking the buy now the you will be redirected to Orders. Whre you can see the summary of your Order, Total Amout and the associated Payment Id. You can also come to this by clicking Orders in the Header.
+- Layout - Contains Header and Footer component.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Future Improvements:
 
-### `yarn test`
+This project is currently in development. Users can create and Sign in to thier account or use as an Guest, add/remove products to/from the basket, proceed to checkout and complete and Payment and view thier order details. Functionality to host cloud functions on firebase blaze or on Heroku is in the progress.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Responsive Design for Mobile
+- Animations
+- Merchant Account
 
-### `yarn build`
+## Project Screen Shot(s)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[ PRETEND SCREEN SHOT IS HERE ]
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[ PRETEND OTHER SCREEN SHOT IS HERE ]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup Instructions
 
-### `yarn eject`
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Installation:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To Start Server:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm start`
 
-## Learn More
+To Visit App:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`localhost:3000/` in your local environment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`https://clone-4afa0.web.app/` the project is hosted on Firebase.
 
-### Code Splitting
+## Reflection
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- The context of this project is to built an E-Commerce React App is to learn React and build something that I can use to get ckients as a Freelancers and to add to the portfolio to get a great job.
+- React,node etc was previouslly stup on my sytem. I have stup Firebase and and Stripe for the first time to build this project.
+- Q Why was this project challenging and therefore a really good learning experience?
+- A As I an Frontend Developer. Didn't had much experince with database and Payment Gateways. I have learnt about more concepts in the React like React-Router, Context-API, Firebase Auth, Hosting, Cloud Functions and Stripe Payment Gateway
+- Q What were some unexpected obstacles?
+- A
+- What tools did you use to implement this project?
+  - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.
 
-### Analyzing the Bundle Size
+This was a 1 week long project built during the end of Summers in Covid Year 2020. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Originally I wanted to build an application that allowed users to order products from the app. I can use the learnings and steps involved in building this clone to develop similar E-Commmerce Apps for the local bussinesses or Company Requirements. I started this process by using the `create-react-app` boilerplate, then adding `react-router-dom` and `firebase-tools`.
 
-### Making a Progressive Web App
+One of the main challenges I ran into was Payment. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+At the end of the day, the technologies implemented in this project are React, React-Router, Context-API, Firebase, Stripe and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes. In the next iteration I plan on handrolling a `webpack.config.js` file to more fully understand the build process.

@@ -68,7 +68,7 @@ function Footer() {
         />
         <span className="footer__lineMessage">
           Amazon clone developed by &copy;{" "}
-          <a href="https://github.com/Jasvinder15s" target="_blank">
+          <a href="https://github.com/jvsinghk" target="_blank">
             Jasvinder Singh
           </a>
         </span>
