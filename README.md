@@ -34,33 +34,24 @@ Clone down this repository. You will need `node` and `npm` installed globally on
 
 Installation:
 
-`npm install`
+`npm install` or `yarn`
 
 To Start Server:
 
-`npm start`
+`npm start` or `yarn start`
 
 To Visit App:
 
 `localhost:3000/` in your local environment.
 
-`https://clone-4afa0.web.app/` the project is hosted on Firebase.
+Amazon Clone is hosted on [Firebase](https://clone-4afa0.web.app/).
 
 ## Reflection
 
-- The context of this project is to built an E-Commerce React App is to learn React and build something that I can use to get ckients as a Freelancers and to add to the portfolio to get a great job.
-- React,node etc was previouslly stup on my sytem. I have stup Firebase and and Stripe for the first time to build this project.
-- Q Why was this project challenging and therefore a really good learning experience?
-- A As I an Frontend Developer. Didn't had much experince with database and Payment Gateways. I have learnt about more concepts in the React like React-Router, Context-API, Firebase Auth, Hosting, Cloud Functions and Stripe Payment Gateway
-- Q What were some unexpected obstacles?
-- A
-- What tools did you use to implement this project?
-  - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.
+This was a 1 week long project built during the end of Summers in Covid Year 2020. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features. As I an Frontend Developer. Didn't had much experince with database and Payment Gateways. I have learnt about more concepts in the React like React-Router, Context-API, Firebase Auth, Hosting, Cloud Functions and Stripe Payment Gateway. In that way this project was challenging and therefore a great learning experince.
 
-This was a 1 week long project built during the end of Summers in Covid Year 2020. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.
+Originally I wanted to build an application that allowed users to order products from the app. I can use the learnings and steps involved in building this clone to develop similar E-Commmerce Apps for the local bussinesses or Company Requirements. I started this process by using the `create-react-app` boilerplate, then adding `react-router-dom` and `firebase-tools`.React,node etc was previouslly stup on my sytem. I have stup Firebase and and Stripe for the first time to build this project.
 
-Originally I wanted to build an application that allowed users to order products from the app. I can use the learnings and steps involved in building this clone to develop similar E-Commmerce Apps for the local bussinesses or Company Requirements. I started this process by using the `create-react-app` boilerplate, then adding `react-router-dom` and `firebase-tools`.
-
-One of the main challenges I ran into was Payment. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
+One of the main challenges I ran into was payment integration, cloud functions deployment on firebase blaze plan. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
 
 At the end of the day, the technologies implemented in this project are React, React-Router, Context-API, Firebase, Stripe and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes. In the next iteration I plan on handrolling a `webpack.config.js` file to more fully understand the build process.
